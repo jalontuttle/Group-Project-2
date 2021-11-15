@@ -1,8 +1,84 @@
 [
     {
+<<<<<<< HEAD
+      "name": "Field of Dreams",
+      "genre": "Drama, Fantasy, Sports",
+      "release_date": "05/05/1989",
+      "poster": ""
+    }
+
+  ]
+  [
+    {
+      "name": "Dune",
+      "genre": "Science Fiction, Adventure",
+      "release_date": "10/22/2021",
+      "poster": ""
+    }
+
+  ]
+  [
+    {
+      "name": "Spider-Man",
+      "genre": "Fantasy, Action",
+      "release_date": "05/03/2002",
+      "poster": ""
+    }
+
+  ]
+  [
+    {
+      "name": "Heat",
+      "genre": "Action, Crime, Drama, Thriller",
+      "release_date": "",
+      "poster": ""
+    }
+
+  ]
+  [
+    {
+      "name": "Dunkirk",
+      "genre": "War, Action, Drama",
+      "release_date": "07/21/2017",
+      "poster": ""
+    }
+
+  ]
+]
+
+[
+  {
+    "name": "Anchorman: The Legend of Ron Burgundy",
+    "genre": "Comedy",
+    "release_date": "07/09/2004",
+    "poster": ""
+  }
+
+]
+
+[
+  {
+    "name": "Wedding Crashers",
+    "genre": "Comedy, Romance",
+    "release_date": "07/15/2005",
+    "poster": ""
+  }
+
+]
+
+[
+  {
+    "name": "Crazy, Stupid, Love",
+    "genre": "Comedy, Drama, Romance",
+    "release_date": "07/29/2011",
+    "poster": ""
+  }
+
+=======
       "name": "",
       "genre": "",
       "release_date": ""
     }
 
+>>>>>>> b2d7077450bbbfc77f768f95d7d99f276f2826a0
 ]
