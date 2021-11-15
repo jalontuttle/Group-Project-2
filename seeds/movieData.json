@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
       "name": "Field of Dreams",
       "genre": "Drama, Fantasy, Sports",
       "release_date": "05/05/1989",
@@ -73,4 +74,11 @@
     "poster": ""
   }
 
+=======
+      "name": "",
+      "genre": "",
+      "release_date": ""
+    }
+
+>>>>>>> b2d7077450bbbfc77f768f95d7d99f276f2826a0
 ]
