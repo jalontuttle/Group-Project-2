@@ -1,11 +1,23 @@
 const router = require('express').Router();
 const { Movie } = require('../models');
 
-// get route for homepage
-app.get('/', function(req, res){
-    res.render('home');
+router.get('/', async (req, res) => {
+    try{
+        const movieData = await Movie.findAll();
+        const movieInfo = movieData.map(movie => movie.get({ plain: true }));
+
+        res.render('home', { movieInfo })
+    } catch(err) {
+        res.status(500).json(err);
+    }
 });
 
-// get route to display list of movies
+router.get('/login', (req, res) => {
+    res.render('login');
+})
 
-// get route to display review
+router.get('/signup', (req, res) => {
+    res.render('signup');
+})
+
+module.exports = router;
