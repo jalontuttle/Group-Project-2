@@ -1,51 +1,51 @@
 [
     {
-      "name": "Field of Dreams",
+      "movie_name": "Field of Dreams",
       "genre": "Drama, Fantasy, Sports",
       "release_date": "05/05/1989",
-      "poster": ""
+      "movie_poster": "https://image.tmdb.org/t/p/original/8PT4sAcneQ7MtZ1Mqoe2EyOJHmZ.jpg"
     },
     {
-      "name": "Dune",
+      "movie_name": "Dune",
       "genre": "Science Fiction, Adventure",
       "release_date": "10/22/2021",
-      "poster": ""
+      "movie_poster": "https://i.pinimg.com/originals/4f/23/71/4f23717fbef818499a42c06de774bbc3.jpg"
     },
     {
-      "name": "Spider-Man",
+      "movie_name": "Spider-Man",
       "genre": "Fantasy, Action",
       "release_date": "05/03/2002",
-      "poster": ""
+      "movie_poster": "https://image.tmdb.org/t/p/original/wZGlaMxBAjCIYLzyDWvocaoNooZ.jpg"
     },
     {
-      "name": "Heat",
+      "movie_name": "Heat",
       "genre": "Action, Crime, Drama, Thriller",
-      "release_date": "",
-      "poster": ""
+      "release_date": "12/15/1995",
+      "movie_poster": "https://fanart.tv/fanart/movies/949/movieposter/heat-59e2613ba71df.jpg"
     },
     {
-      "name": "Dunkirk",
+      "movie_name": "Dunkirk",
       "genre": "War, Action, Drama",
       "release_date": "07/21/2017",
-      "poster": ""
+      "movie_poster": "https://image.tmdb.org/t/p/original/zx87sFGLXZdrSF4B9WPhwjaKuQP.jpg"
     },
     {
-      "name": "Anchorman: The Legend of Ron Burgundy",
+      "movie_name": "Anchorman: The Legend of Ron Burgundy",
       "genre": "Comedy",
       "release_date": "07/09/2004",
-      "poster": ""
+      "movie_poster": "http://images.moviepostershop.com/anchorman-the-legend-of-ron-burgundy-movie-poster-2004-1020197601.jpg"
     },
     {
-      "name": "Wedding Crashers",
+      "movie_name": "Wedding Crashers",
       "genre": "Comedy, Romance",
       "release_date": "07/15/2005",
-      "poster": ""
+      "movie_poster": "https://image.tmdb.org/t/p/original/jam1ZZcwvh1RQeBFcuM7OPFzCaa.jpg"
     },
     {
-      "name": "Crazy, Stupid, Love",
+      "movie_name": "Crazy, Stupid, Love",
       "genre": "Comedy, Drama, Romance",
       "release_date": "07/29/2011",
-      "poster": ""
+      "movie_poster": "https://fanart.tv/fanart/movies/50646/movieposter/crazy-stupid-love-52ec435968557.jpg"
     }
 
 ]

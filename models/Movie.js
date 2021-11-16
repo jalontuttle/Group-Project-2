@@ -23,6 +23,10 @@ Movie.init(
             type: DataTypes.DATEONLY,
             allowNull: false,
         },
+        movie_poster: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        }
     },
     {
         sequelize,
