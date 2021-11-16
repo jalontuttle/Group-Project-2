@@ -9,10 +9,6 @@ const app = express();
 app.engine('handlebars', hbs.engine());
 app.set('view engine', 'handlebars');
 
-app.get('/', function(req, res){
-    res.send("Homepage!");
-});
-
 sequelize.sync({force:true}).then(()=>{
     app.listen(PORT, () => {
         console.log(`Server is listening at http://localhost:${PORT}`)
