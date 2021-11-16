@@ -6,7 +6,7 @@ router.get('/', async (req, res) => {
         const movieData = await Movie.findAll();
         const movieInfo = movieData.map(movie => movie.get({ plain: true }));
 
-        res.render('home', { movieInfo })
+        res.render('home', {movieInfo})
     } catch(err) {
         res.status(500).json(err);
     }
