@@ -1,0 +1,30 @@
+<div class='header-container'>
+    <h1>{{movieInfo.movie_name}}</h1>
+    <h2>{{movieInfo.genre}}</h2>
+    <h3>{{movieInfo.release_date}}</h3>
+</div>
+<div class='poster-container'>
+    <span id='movie-poster'>{{movieInfo.movie_poster}}</span>
+</div>
+<div class='review-container'>
+    <div class='current-reviews'>
+        <p>Reviews</p>
+        {{#each reviewInfo as |review|}}
+        <p>{{review.review_title}}</p>
+        <p>{{review.review_body}}</p>
+        {{/each}}
+    </div>
+    <div class='add-review-container'>
+        <p>Add your review here:</p>
+        <form class='new-review-form'>
+            <label for='review-title'>Review Title:</label><br>
+            <textarea id='review-title' name='review-title'>{{review_title}}</textarea><br>
+            <label for='review-body'>Review:</label><br>
+            <textarea id='review-body' name='review-body'>{{review_body}}</textarea><br>
+            <label for='user-name'>Your Name:</label><br>
+            <textarea id='user-name' name='user-name'>{{user_name}}</textarea><br>
+            <button type='submit' value='submit'>Submit</button>
+        </form>
+    </div>
+</div>
+<script src='/js/addReview.js'></script>
