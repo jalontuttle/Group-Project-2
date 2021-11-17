@@ -18,7 +18,7 @@
         </li>
         <li class="nav-item">
           {{#if logged_in}}
-          <button class="btn" id="logout" style="color: black;">logout</button>
+          <button class="btn" id="logout" style="color: black;">Logout</button>
           {{else}}
           <button class="btn" id='home'><a href="/login" style="color: black;">Login</a></button>
           {{/if}}
@@ -40,7 +40,7 @@
 
   <!-- Only include the logout script if the user is logged in -->
   {{#if logged_in}}
-  <script src=""></script>
+  <script src="/js/logout.js"></script>
   {{/if}}
 </body>
 
