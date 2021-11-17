@@ -1,0 +1,38 @@
+[
+    {
+        "review_title": "Stunning!",
+        "review_body": "This movie blew my mind!  What a mind-bender.",
+        "user_id": "1",
+        "movie_id": "2"
+    },
+    {
+        "review_title": "Terrible!",
+        "review_body": "Very, very bad.",
+        "user_id": "2",
+        "movie_id": "1"
+    },
+    {
+        "review_title": "Too meta",
+        "review_body": "I thought it was a bit too contrived",
+        "user_id": "3",
+        "movie_id": "5"
+    },
+    {
+        "review_title": "Incredible!",
+        "review_body": "Wow, it was so emotional!  I cried.",
+        "user_id": "4",
+        "movie_id": "6"
+    },
+    {
+        "review_title": "So boring",
+        "review_body": "Three hours of my life I'll never get back.",
+        "user_id": "2",
+        "movie_id": "3"
+    },
+    {
+        "review_title": "Very loud",
+        "review_body": "This movie was way too loud!  It scared my grandma.",
+        "user_id": "1",
+        "movie_id": "4"
+    }
+]
