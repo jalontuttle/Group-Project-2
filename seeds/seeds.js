@@ -3,7 +3,7 @@ const { Movie, Review, User } = require('../models');
 
 const movieData = require('./movieData.json');
 const reviewData = require('./reviewData.json');
-const userInfo = require('./userInfo.json');
+const userData = require('./userData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -13,7 +13,7 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  await User.bulkCreate(userInfo, {
+  await User.bulkCreate(userData, {
     individualHooks: true,
     returning: true,
   });
