@@ -1,31 +1,65 @@
-<div class='header-container'>
-    <h1>{{movieInfo.movie_name}}</h1>
-    <h2>{{movieInfo.genre}}</h2>
-    <h3>{{movieInfo.release_date}}</h3>
-</div>
-<div class='poster-container'>
-    <img src='{{movieInfo.movie_poster}}' class="card-img" style="border-right: solid 2px black; border-bottom: solid 2px black;>
+<div class="container d-flex">
+  <div class="poster-container col-6">
+    <img
+      src="{{movieInfo.movie_poster}}"
+      class="rounded float-start justify-content-center img-thumbnail"
+    />
+  </div>
+  <div class="header-container col-6">
+    <h1 class="text-light fs-1">{{movieInfo.movie_name}}</h1>
+    <h2 class="text-light fs-2">{{movieInfo.genre}}</h2>
+    <h3 class="text-light fs-3">{{movieInfo.release_date}}</h3>
     <input type="hidden" id="movie-id" data-id="{{movieInfo.id}}" />
+  </div>
 </div>
-<div class='review-container'>
-    <div class='current-reviews'>
-        <p>Reviews</p>
-        {{#each reviewInfo as |review|}}
-        <p>{{review.review_title}}</p>
-        <p>"{{review.review_body}}"</p>
-        {{/each}}
-    </div>
-    <div class='add-review-container'>
-        <p>Add your review here:</p>
-        <form class='new-review-form'>
-            <label for='review-title' class='form-label'>Review Title:</label><br>
-            <textarea id='review-title' class="form-control" name='review_title'>{{review_title}}</textarea><br>
-            <label for='review-body' class='form-label'>Review:</label><br>
-            <textarea id='review-body' class="form-control" name='review_body'>{{review_body}}</textarea><br>
-            <label for='user-name' class='form-label'>Your Name:</label><br>
-            <textarea id='user-name' class="form-control" name='user_name'>{{user_name}}</textarea><br>
-            <button type='submit' value='submit'>Submit</button>
-        </form>
-    </div>
+<div class="review-container">
+  <div class="current-reviews">
+    <p class="text-light">What do others think of this movie?</p>
+    {{#each reviewInfo as |review|}}
+      <div class="container">
+        <div class="row row-cols-4 row-cols-md-1 g-4">
+          <div class="col">
+            <div class="card w-25 mb-4">
+              <div class="card-body">
+                <h5 class="card-title mb-2">{{review.review_title}}</h5>
+                <div class="card-text mb-1">"{{review.review_body}}"</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  <div class="add-review-container">
+    <p class="text-light">Let your voice be heard below and add a review for
+      this movie today!</p>
+    <form class="new-review-form mb-5">
+      <label for="review-title" class="form-label mb-1"></label>
+      <textarea
+        id="review-title"
+        class="form-control mb-1"
+        name="review_title"
+        rows="1"
+        placeholder="Title your review!"
+      >{{review_title}}</textarea>
+      <label for="review-body" class="form-label mb-1"></label>
+      <textarea
+        id="review-body"
+        class="form-control mb-1"
+        name="review_body"
+        rows="2"
+        placeholder="Write your review here"
+      >{{review_body}}</textarea>
+      <label for="user-name" class="form-label mb-1"></label>
+      <textarea
+        id="user-name"
+        class="form-control mb-3"
+        name="user_name"
+        rows="1"
+        placeholder="Leave your name"
+      >{{user_name}}</textarea>
+      <button type="submit" value="submit">Submit</button>
+    </form>
+  </div>
 </div>
-<script src='/js/addReview.js'></script>
+<script src="/js/addReview.js"></script>
