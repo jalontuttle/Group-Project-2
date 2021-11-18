@@ -1,23 +1,31 @@
-{{#each movieInfo as |movie|}}
-<div>
-  <div class="card mb-3" style="max-width: 540px;">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="{{movie_poster}}" class="card-img" alt="..." style="border-right: solid 2px black; border-bottom: solid 2px black;">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">{{movie_name}}</h5>
-        <p class="card-text">{{genre}}</p>
-        <p class="card-text">{{release_date}}</p>
+<div id="movie-results" class="container">
+  <div class="row row-cols-3 row-cols-md-2 g-4">
+    {{#each movieInfo as |movie|}}
+      <div class="col">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="{{movie_poster}}"
+                class="card-img"
+                alt="..."
+                style="border-right: solid 2px black; border-bottom: solid 2px black;"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{movie_name}}</h5>
+                <p class="card-text">{{genre}}</p>
+                <p class="card-text">{{release_date}}</p>
+                <small class="text-muted"><a
+                    href="/review/{{id}}"
+                    style="color: black;"
+                  >See reviews here!</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div> 
-  <div class="card-footer">
-  <small class="text-muted"><a href='/review/{{id}}' style="color: black;">Click here for reviews!</a></small>
+    {{/each}}
   </div>
-</div>     
 </div>
-{{/each}}
-
-
