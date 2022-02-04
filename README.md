@@ -9,7 +9,9 @@
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
-  
+
+  ## Technologies Used
+  Express-handlebars, MYSQL2, Sequelize, Express.js API, dotenv, express-sessions, bcrypt, javascript, HTML, CSS, Heroku, JAWSDB
   ## Installation
   Installation
   You’ll need to use the express-handlebars package to implement Handlebars.js for your Views, use the MySQL2 and Sequelize packages to connect to a MySQL database for your Models, and create an Express.js API for your Controllers.
@@ -52,4 +54,4 @@
   -
 
   Brady1052
-  -bradybuchholz@gmail.com
+  -bradybuchholz.dev@gmail.com
